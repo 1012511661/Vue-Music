@@ -44,7 +44,9 @@
         next(vm => {
           // nav隐藏 title 显示
           vm.$store.commit('showHead', true)
-          //根据沿Y轴滚动的距离来给title加颜色
+          // 刚进来title 透明度为0
+          vm.$store.commit('setHeadStyle', { 'background': 'rgba(43,162,251,0)'})
+          //根据沿Y轴滚动的距离改变透明度，title颜色
           window.onscroll = ()=> {
             vm.opacity = window.pageYOffset / 250
             vm.$store.commit('setHeadStyle', {background: `rgba(43,162,251,${vm.opacity})`})

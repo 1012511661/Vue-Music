@@ -31,8 +31,7 @@
       beforeRouteLeave(to, from, next){
         // nav 显示  title 隐藏
         this.$store.commit('showHead', false);
-        next()
-        // next(true) 离开，next(false)不离开
+        next() // next(true) 离开，next(false)不离开       
       },
       methods:{
         //数据

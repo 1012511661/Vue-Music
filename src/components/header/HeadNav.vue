@@ -23,7 +23,7 @@
            //在tab和event中可以查找该元素的任何属性
           let index = tab._data.index;
           // index 是字符串
-         // console.log(index);
+          //console.log(typeof index);
           this.goRouter(index);
         },
         goRouter(index){
@@ -58,30 +58,24 @@
     left: 0;
     z-index: 999;
     .el-tabs{
-      width: 100%;
-      margin: 0 auto;
+      // width: 100%;
+      // margin: 0 auto;
       .el-tabs__header{
         margin: 0;
         .el-tabs__nav-wrap{
-          margin-bottom: 0;
-          .mint-tab-item-label{
-            font-size: 18px !important;
-          }
+         // margin-bottom: 0;
           .el-tabs__nav{
-            width: 100% !important;
-            float:none !important;
-            .el-tabs__active-bar{
-            }
+            // width: 100%;
+            float:none;
             .el-tabs__item{
               width: 25% !important;
-              padding: 0 !important;
+              //padding: 0 !important;
               text-align: center !important;
               font-size: 16px !important;
             }
           }
         }
       }
-
     }
   }
 </style>
