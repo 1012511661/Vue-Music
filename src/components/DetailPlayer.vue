@@ -89,7 +89,7 @@
         },
         lrcOffset(){
           if (this.songLrc) {
-            var offset = (this.songLrc.length - document.querySelectorAll('.isCurrentLrc').length - 2) * (-50)
+            var offset = (this.songLrc.length - document.querySelectorAll('.isCurrentLrc').length - 2) * (-35)
             return this.startTime.actionTime + offset - this.startTime.actionTime
           }
         }
